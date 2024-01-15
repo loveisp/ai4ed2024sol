@@ -8,7 +8,7 @@ Here are our solutions for the AAAI2024 Global Competition on Math Problem Solvi
 
 - Wei Dai, Robo Space (Captain)
 - Tianao Lou, Chinese Academy of Sciences
-- Zehua Cheng, Oxford
+- Zehua Cheng, Oxford University
 - Yuanqing Zhao, Nvidia
 
 ## Model List
@@ -19,3 +19,9 @@ The models used in our solutions:
 - [meta-math/MetaMath-Llemma-7B](https://huggingface.co/meta-math/MetaMath-Llemma-7B)
 - [akjindal53244/Arithmo-Mistral-7B](https://huggingface.co/akjindal53244/Arithmo-Mistral-7B)
 - [WizardLM/WizardMath-70B-V1.0](https://huggingface.co/WizardLM/WizardMath-70B-V1.0)
+
+## Environment
+
+- Python 3.
+- PyTorch
+- vllm
