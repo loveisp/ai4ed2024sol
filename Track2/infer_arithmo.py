@@ -31,6 +31,7 @@ def get_llm(model_path):
 
 
 model_name = 'Arithmo-Mistral-7B'
+# set the model paths here
 model_path = '/home/ubuntu/data/huggingface/models/math/akjindal53244/Arithmo-Mistral-7B/'
 llm = get_llm(model_path)
 

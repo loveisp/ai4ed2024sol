@@ -28,15 +28,15 @@ We performed ensemble using the answers from six of the models, and in the end, 
 Executing the following code will provide you with the intermediate results of the six models with their inference processes.
 
 ```
-CUDA_VISIBLE_DEVICES=0,1 python infer.py MetaMath-70B-V1.0 ./TAL-SAQ6K-EN.jsonl --prompt_type cot --max_tokens 512
+CUDA_VISIBLE_DEVICES=0,1,2,3 python infer.py MetaMath-70B-V1.0 ./TAL-SAQ6K-EN.jsonl --prompt_type cot --max_tokens 512
 CUDA_VISIBLE_DEVICES=0,1 python infer.py MetaMath-Mistral-7B ./TAL-SAQ6K-EN.jsonl --prompt_type cot --max_tokens 512
 CUDA_VISIBLE_DEVICES=0,1 python infer.py MetaMath-Mistral-7B ./TAL-SAQ6K-EN.jsonl --prompt_type default --max_tokens 512
 CUDA_VISIBLE_DEVICES=0,1 python infer.py MetaMath-Llemma-7B ./TAL-SAQ6K-EN.jsonl --prompt_type default --max_tokens 512
 CUDA_VISIBLE_DEVICES=0,1 python infer_arithmo.py ./TAL-SAQ6K-EN.jsonl --prompt_type cot --max_tokens 512
-CUDA_VISIBLE_DEVICES=0,1 python infer.py WizardMath-70B-V1.0 ./TAL-SAQ6K-EN.jsonl --prompt_type cot --max_tokens 1024
+CUDA_VISIBLE_DEVICES=0,1,2,3 python infer.py WizardMath-70B-V1.0 ./TAL-SAQ6K-EN.jsonl --prompt_type cot --max_tokens 1024
 ```
 
-Note that you need to set the path to the location of the downloaded models in the inference code.
+Note that you need to set the path to the location of the downloaded models in the inference code "infer.py".
 
 After executing these codes, intermediate result files will be generated in the "raw_results" directory.
 

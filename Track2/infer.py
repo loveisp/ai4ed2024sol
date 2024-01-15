@@ -32,6 +32,7 @@ def get_llm(model_path):
     return LLM(model=model_path, tensor_parallel_size=num_gpus)
 
 
+# set the model paths here
 d_model_paths = {
     'MetaMath-Mistral-7B': '/home/ubuntu/data/huggingface/models/math/meta-math/MetaMath-Mistral-7B/', 
     'MetaMath-Llemma-7B': '/home/ubuntu/data/huggingface/models/math/meta-math/MetaMath-Llemma-7B/', 

@@ -1,6 +1,6 @@
 # Solutions for Track 1
 
-Use multiple models to obtain answers to questions in the dataset, and then perform ensemble.
+Use multiple models to obtain answers to questions in the dataset.
 
 The scores of answers from each model after submission are as follows:
 
@@ -21,17 +21,17 @@ The scores of answers from each model after submission are as follows:
 - max_tokens refers to the maximum number of tokens in the output. The larger this value, the less likely the answer will be truncated, but it also significantly increases the inference time.
 - score refers to the accuracy score obtained after submitting on the Codabench platform.
 
-Since the scores are relatively low in this case, there is no ensemble performed like in Track 2. The best score obtained is 11.3 from the MetaMath-70B-V1.0 model.
+Since the scores are relatively low in this case, there is no ensemble performed like in Track 2. The best score obtained is 11.30 from the MetaMath-70B-V1.0 model.
 
 ## Inference
 
 Executing the following code will provide you with the intermediate results of the six models with their inference processes.
 
 ```
-CUDA_VISIBLE_DEVICES=0,1 python infer.py MetaMath-70B-V1.0 ./TAL-SAQ7K-CN.jsonl --prompt_type cot --max_tokens 512
+CUDA_VISIBLE_DEVICES=0,1,2,3 python infer.py MetaMath-70B-V1.0 ./TAL-SAQ7K-CN.jsonl --prompt_type cot --max_tokens 512
 ```
 
-Note that you need to set the path to the location of the downloaded models in the inference code.
+Note that you need to set the path to the location of the downloaded models in the inference code "infer.py".
 
 After executing these codes, intermediate result files will be generated in the "raw_results" directory.
 
@@ -45,7 +45,7 @@ By executing the following code, you can generate the final result file for subm
 python extract_submission.py ./raw_results/TAL-SAQ7K-CN_XXX.jsonl
 ```
 
-Here, we have already placed the inference result in the "raw_results" folder. We just need to execute the following command:
+Here, we have already placed the inference result in the "raw_results" folder. So we just need to execute the following command:
 
 ```
 python extract_submission.py ./raw_results/TAL-SAQ7K-CN_MetaMath-70B-V1.0_512_cot.jsonl
