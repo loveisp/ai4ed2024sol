@@ -1,4 +1,4 @@
-# Solutions for Track 1
+# Solution for Track 1
 
 Use multiple models to obtain answers to questions in the dataset.
 

@@ -1,4 +1,4 @@
-# Solutions for Track 2
+# Solution for Track 2
 
 Use multiple models to obtain answers to questions in the dataset, and then perform ensemble.
 
