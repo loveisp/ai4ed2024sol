@@ -47,7 +47,7 @@ This step is very time-consuming and may take around 15 to 20 hours or even more
 By executing the following code, you can generate the final result file for submission in the "submissions" directory.
 
 ```
-python extract_submission.py ./raw_results/TAL-SAQ6K-EN_MetaMath-Mistral-7B_512_default.jsonl
+python extract_submission.py ./raw_results/TAL-SAQ6K-EN_XXX.jsonl
 ```
 
 ## Ensemble
@@ -62,5 +62,4 @@ python ensemble.py ./ensemble_source/
 
 After executing the code, the file "TAL_SAQ6K_EN_prediction.json" will be generated in the "submissions" folder for submission.
 
-You can copy the 6 result files generated from the inference process to the "ensemble_source" folder, which will serve as the input for the ensemble.py script. For demonstration purposes, the "ensemble_source" folder already contains the result files from the inference process. Therefore, you can directly execute the code above without performing the inference.
-
+You can copy the 6 result files generated from the inference process to the "ensemble_source" folder, which will serve as the input for the ensemble.py script. For demonstration purposes, the "ensemble_source" folder already contains the result files from the inference process. Therefore, you can directly execute the code above without performing the inference. The "TAL_SAQ6K_EN_prediction.json" file generated is the result file with a score of 48.76.

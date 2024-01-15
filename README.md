@@ -22,6 +22,6 @@ The models used in our solutions:
 
 ## Environment
 
-- Python 3.
 - PyTorch
-- vllm
+- transformers 4.36.2
+- vllm 0.2.6
